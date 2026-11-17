@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="John Wells — IT infrastructure and operations leader, U.S. Army veteran. Microsoft 365, Azure, VoIP, disaster recovery, AI automation, and IT operations.">
+  <title>John Wells · IT Infrastructure &amp; Operations</title>
+  <style>
+    :root {
+      --ink: #1c1915;
+      --muted: #5c574e;
+      --rule: #d8d0c4;
+      --paper: #f7f3ec;
+      --card: #fffdf8;
+      --accent: #6b3f24;
+      --accent-soft: #8a5a38;
+    }
+
+    * { box-sizing: border-box; }
+    html { font-size: 18px; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2.75rem 1.5rem 3.5rem;
+    }
+
+    header {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .wordmark {
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 650;
+      color: var(--accent);
+    }
+
+    .vet {
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+      font-weight: 600;
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      line-height: 1.05;
+      margin: 0 0 0.6rem;
+      letter-spacing: -0.02em;
+    }
+
+    .headline {
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+      color: var(--accent-soft);
+      margin: 0 0 1.35rem;
+      font-weight: 500;
+    }
+
+    .summary {
+      max-width: 46rem;
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.02rem;
+    }
+
+    h2 {
+      font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      font-weight: 600;
+      margin: 0 0 1.15rem;
+      letter-spacing: -0.01em;
+    }
+
+    section { margin-bottom: 2.75rem; }
+
+    .capabilities {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 1.15rem;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      padding: 1.15rem 1.2rem 1.2rem;
+    }
+
+    article h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.02rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+    }
+
+    article p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .ai-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .ai-list li {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 0.85rem 1.1rem 0.9rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .results {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .result {
+      display: grid;
+      grid-template-columns: 7.5rem 1fr;
+      gap: 1.1rem;
+      padding: 1.15rem 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .result:last-child { border-bottom: 1px solid var(--rule); }
+
+    .result .label {
+      font-size: 0.78rem;
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding-top: 0.2rem;
+    }
+
+    .result h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.08rem;
+      font-weight: 650;
+    }
+
+    .result p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    footer {
+      background: var(--ink);
+      color: #f4efe6;
+      border-radius: 12px;
+      padding: 1.6rem 1.5rem 1.7rem;
+    }
+
+    footer h2 {
+      color: #f4efe6;
+      margin-bottom: 0.35rem;
+    }
+
+    footer p.lead {
+      margin: 0 0 1.15rem;
+      color: #d2cbbf;
+      font-size: 0.98rem;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.75rem;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.35);
+      font-weight: 550;
+    }
+
+    footer a:hover { border-bottom-color: #fff; }
+
+    @media (max-width: 760px) {
+      .wrap { padding: 1.6rem 1.1rem 2.4rem; }
+      .brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+        margin-bottom: 1.4rem;
+      }
+      .capabilities { grid-template-columns: 1fr; }
+      .result { grid-template-columns: 1fr; gap: 0.3rem; }
+      h1 { font-size: 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="wordmark">WellsTC.us</div>
+        <div class="vet">U.S. Army veteran · Honorable discharge</div>
+      </div>
+      <h1>John Wells</h1>
+      <p class="headline">IT infrastructure &amp; operations leader</p>
+      <p class="summary">
+        Hands-on technology leader with 25+ years in IT and 15+ years as an IT Infrastructure Manager.
+        Most recently led systems, networks, endpoints, and communications for High Power Technical Services,
+        the DISH Network Regional Service Provider for Kentucky, Indiana, and Ohio. I own the work from
+        day-to-day operations through recovery, and I keep it understandable for the people who depend on it.
+      </p>
+    </header>
+
+    <section>
+      <h2>Capabilities</h2>
+      <div class="capabilities">
+        <article>
+          <h3>Microsoft 365 &amp; Azure administration</h3>
+          <p>Microsoft 365 and Azure operations, including Active Directory and the care of cloud and on-premises infrastructure. Led the migration of 19 on-premises servers to Microsoft Azure, consolidating them to 12 virtual machines.</p>
+        </article>
+        <article>
+          <h3>Endpoint &amp; RMM management</h3>
+          <p>Endpoint support across PCs, servers, and related hardware, including patching and inventory through RMM tools such as Datto RMM and ConnectWise. Oversaw software and hardware upgrades and the policies that keep those changes orderly.</p>
+        </article>
+        <article>
+          <h3>Google Workspace</h3>
+          <p>Administered Google Workspace as a backup environment for four years, keeping a second collaboration and productivity platform ready if the primary path was unavailable.</p>
+        </article>
+        <article>
+          <h3>VoIP &amp; telephony</h3>
+          <p>More than 20 years managing and deploying VoIP and unified communications, including Microsoft Teams, Jive, Digium, Broadband Dynamics, CloudQ, Nuxiba, and Vidyo — covering dial plans, call routing, SIP, and day-to-day telephony reliability.</p>
+        </article>
+        <article>
+          <h3>Disaster recovery &amp; business continuity</h3>
+          <p>Designed recovery and failover so a building-level outage does not stop the business: hosted VoIP, a warehouse backup call center, and cloud infrastructure, with practiced incident response when it counts.</p>
+        </article>
+        <article>
+          <h3>IT operations &amp; vendor management</h3>
+          <p>Owned infrastructure operations end to end — servers, PCs, printers, communications, and phone systems — including maintenance agreements, vendor coordination, upgrades, and cost-conscious project delivery.</p>
+        </article>
+        <article>
+          <h3>Team leadership &amp; call-center operations</h3>
+          <p>10+ years as Call Center Manager, leading a high-volume technical support operation for DISH Network field technicians and customers across Kentucky, Indiana, and Ohio. Hired, scheduled, coached, and kept service quality consistent.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>AI &amp; Automation</h2>
+      <ul class="ai-list">
+        <li>Designed and run a team of eight AI agents (Grok Bot) that handle day-to-day IT administration and personal operations, with a “Chief of Staff” agent that hands out tasks and keeps the others on track.</li>
+        <li>Use agents to manage a home and remote infrastructure: Raspberry Pi DNS filtering with Pi-hole, Linux (Bazzite) workstations, a Windows endpoint, and a CasaOS/Plex media server, all reached securely over a Tailscale private network.</li>
+        <li>Built approval-based guardrails into these workflows. Agents draft emails, applications, and system changes, and nothing goes out without my sign-off.</li>
+        <li>Automated recurring work with scheduled agent routines: mail triage and filing, job-alert screening, calendar updates, and meeting transcription.</li>
+        <li>Use LLMs daily to draft documentation, research, troubleshoot, and handle routine tasks faster.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected results</h2>
+      <div class="results">
+        <div class="result">
+          <div class="label">June 2022</div>
+          <div>
+            <h3>Ransomware response, recovery without ransom</h3>
+            <p>Directed incident response to a June 2022 ransomware attack: isolated affected systems, coordinated insurer-engaged response partners, recovered all data without paying ransom, restored 85% of operations within 9 days and full recovery by day 34, then hardened the environment. Subsequent third-party penetration tests confirmed no successful intrusions.</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="label">Cloud move</div>
+          <div>
+            <h3>19 servers to Azure, consolidated to 12</h3>
+            <p>Led the end-to-end migration of 19 on-premises servers — virtual and physical — to Microsoft Azure, consolidating the footprint to 12 VMs. Defined the architecture and sequence, coordinated staff and vendors, and cut over with minimal business disruption.</p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="label">Continuity</div>
+          <div>
+            <h3>Near-zero downtime when the workplace moved</h3>
+            <p>After a 2016 headquarters outage, designed a disaster-avoidance architecture — hosted VoIP, a backup call center in the company warehouse in Taylorsville, Kentucky, and cloud infrastructure — that later enabled near-zero downtime during the 2020 shift to remote work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h2>Contact</h2>
+      <p class="lead">Louisville / Shepherdsville, Kentucky area. Happy to talk about a role or a project.</p>
+      <div class="contact-row">
+        <a href="mailto:JohnWells@WellsTC.us">JohnWells@WellsTC.us</a>
+        <a href="tel:+15023769392">502-376-9392</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
